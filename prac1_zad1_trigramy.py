@@ -3,7 +3,7 @@ __author__ = 'malaania'
 class WczytajTrigramy():
 
     @classmethod
-    def wczytaj(cls, path):
+    def wczytaj(cls, path,k):
         with open(path) as ngram_file:
             ngram_list = [next(ngram_file) for x in xrange(k)]
         return ngram_list
@@ -21,7 +21,24 @@ class WczytajTrigramy():
             slownik[key]=[value]
         return slownik
 
-slownik =  WczytajTrigramy.zbuduj_slownik(WczytajTrigramy.wczytaj("/home/malaania/Desktop/ngramy/2grams"))
-for i in slownik["do domu"]:
-    print i
+    @classmethod
+    def generuj_zdanie(cls, slownik):
+        zdanie=''
+        slowo = random.choice(slownik.keys())
+        zdanie+=slowo
+        zdanie.capitalize()
+        while 1:
+            if slowo in slownik:
+                zdanie+=" "
+                slowo = slowo.split(" ")[1]+" "+random.choice(slownik[slowo])
+                zdanie+=slowo.split(" ")[1]
+                continue
+            else:
+                break
+        zdanie+="."
+        return zdanie.capitalize()
+
+
+slownik =  WczytajTrigramy.zbuduj_slownik(WczytajTrigramy.wczytaj("/home/malaania/Desktop/ngramy/2grams", 1000))
+print WczytajTrigramy.generuj_zdanie(slownik)
 
