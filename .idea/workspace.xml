@@ -14,7 +14,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/pjn$prac1_zad1_trigramy.coverage" NAME="prac1_zad1_trigramy Coverage Results" MODIFIED="1445267231510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pjn$prac1_zad1_trigramy.coverage" NAME="prac1_zad1_trigramy Coverage Results" MODIFIED="1445267314989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pjn$prac1_zad1.coverage" NAME="prac1_zad1 Coverage Results" MODIFIED="1445265624773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -39,8 +39,8 @@
       <file leaf-file-name="prac1_zad1_trigramy.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/prac1_zad1_trigramy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1967213">
-              <caret line="43" column="111" selection-start-line="43" selection-start-column="111" selection-end-line="43" selection-end-column="111" />
+            <state vertical-scroll-proportion="0.8032787">
+              <caret line="43" column="107" selection-start-line="43" selection-start-column="107" selection-end-line="43" selection-end-column="107" />
               <folding />
             </state>
           </provider>
@@ -469,8 +469,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/prac1_zad1_trigramy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1967213">
-          <caret line="43" column="111" selection-start-line="43" selection-start-column="111" selection-end-line="43" selection-end-column="111" />
+        <state vertical-scroll-proportion="0.8032787">
+          <caret line="43" column="107" selection-start-line="43" selection-start-column="107" selection-end-line="43" selection-end-column="107" />
           <folding />
         </state>
       </provider>
