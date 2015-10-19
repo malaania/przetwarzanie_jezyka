@@ -27,20 +27,23 @@ class WczytajTrigramy():
         zdanie=''
         slowo = random.choice(slownik.keys())
         zdanie+=slowo
+        print "'"+slowo+"'"
         zdanie.capitalize()
         while 1:
             if slowo in slownik:
                 zdanie+=" "
                 slowo = slowo.split(" ")[1]+" "+random.choice(slownik[slowo])
-                print slowo
+                print "'"+slowo+"'"
                 zdanie+=slowo.split(" ")[1]
-                continue
             else:
                 break
-        zdanie+="."
+        #zdanie+="."
         return zdanie.capitalize()
 
 
-slownik =  WczytajTrigramy.zbuduj_slownik(WczytajTrigramy.wczytaj("/home/malaania/Desktop/ngramy/3grams", 2000))
-print WczytajTrigramy.generuj_zdanie(slownik)
+slownik =  WczytajTrigramy.zbuduj_slownik(WczytajTrigramy.wczytaj("/home/malaania/Desktop/ngramy/3grams", 20000))
+zdanie = WczytajTrigramy.generuj_zdanie(slownik)
+print zdanie
+print slownik[zdanie.split(" ")[1]+" "+ zdanie.split(" ")[2]]
+
 
