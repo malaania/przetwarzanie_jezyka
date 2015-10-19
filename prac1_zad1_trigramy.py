@@ -16,10 +16,10 @@ class WczytajTrigramy():
             line= ln.strip(" ").split(" ")
             key = line[1].rstrip(" ") + " " + line[2].rstrip(" ")
             value = line[3].rstrip("\n")
-        if key in slownik:
-            slownik[key].append(value)
-        else:
-            slownik[key]=[value]
+            if key in slownik:
+                slownik[key].append(value)
+            else:
+                slownik[key]=[value]
         return slownik
 
     @classmethod
@@ -41,9 +41,6 @@ class WczytajTrigramy():
         return zdanie.capitalize()
 
 
-slownik =  WczytajTrigramy.zbuduj_slownik(WczytajTrigramy.wczytaj("/home/malaania/Desktop/ngramy/3grams", 20000))
+slownik =  WczytajTrigramy.zbuduj_slownik(WczytajTrigramy.wczytaj("/home/malaania/Desktop/ngramy/3grams", 10000))
 zdanie = WczytajTrigramy.generuj_zdanie(slownik)
 print zdanie
-print slownik[zdanie.split(" ")[1]+" "+ zdanie.split(" ")[2]]
-
-
