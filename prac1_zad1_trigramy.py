@@ -1,4 +1,5 @@
 __author__ = 'malaania'
+import random
 
 class WczytajTrigramy():
 
@@ -31,6 +32,7 @@ class WczytajTrigramy():
             if slowo in slownik:
                 zdanie+=" "
                 slowo = slowo.split(" ")[1]+" "+random.choice(slownik[slowo])
+                print slowo
                 zdanie+=slowo.split(" ")[1]
                 continue
             else:
@@ -39,6 +41,6 @@ class WczytajTrigramy():
         return zdanie.capitalize()
 
 
-slownik =  WczytajTrigramy.zbuduj_slownik(WczytajTrigramy.wczytaj("/home/malaania/Desktop/ngramy/2grams", 1000))
+slownik =  WczytajTrigramy.zbuduj_slownik(WczytajTrigramy.wczytaj("/home/malaania/Desktop/ngramy/3grams", 2000))
 print WczytajTrigramy.generuj_zdanie(slownik)
 
