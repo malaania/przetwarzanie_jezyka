@@ -39,7 +39,7 @@ class WczytajTrigramy():
         return zdanie.capitalize()
 
 
-slownik =  WczytajTrigramy.zbuduj_slownik(WczytajTrigramy.wczytaj("/home/malaania/Desktop/ngramy/3grams", 20000),5000)
+slownik =  WczytajTrigramy.zbuduj_slownik(WczytajTrigramy.wczytaj("/home/malaania/Desktop/ngramy/3grams", 50000),2)
 zdanie = WczytajTrigramy.generuj_zdanie(slownik)
 print zdanie
 print len(slownik)
