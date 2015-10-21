@@ -1,4 +1,4 @@
-__author__ = 'malaania'
+# -*- coding: utf8 -*-
 
 import random
 
