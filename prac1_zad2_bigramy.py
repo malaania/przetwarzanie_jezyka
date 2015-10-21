@@ -99,6 +99,6 @@ class WczytajTrigramy():
 
 costam =  WczytajBigramy("/home/malaania/Desktop/ngramy/2grams",10000)
 print costam.generuj_zdanie()
-costam3gramy = WczytajBigramy("/home/malaania/Desktop/ngramy/3grams",1000)
+costam3gramy = WczytajBigramy("/home/malaania/Desktop/ngramy/3grams",10000)
 print costam3gramy.generuj_zdanie()
 print costam.generuj_tekst(2)

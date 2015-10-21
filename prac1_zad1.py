@@ -11,9 +11,9 @@ class WczytajNGram():
     def zbuduj_slownik(self,wczytana_lista):
         slownik=dict()
         for ln in wczytana_lista:
-            line= ln.strip(" ").split(" ")
-            temp_slowo= line[1].rstrip(" ")
-            temp_nastepnik = line[2].rstrip("\n")
+            line= ln.strip().split(" ")
+            temp_slowo= line[1]
+            temp_nastepnik = line[2]
             if temp_slowo in slownik:
                 slownik[temp_slowo].append(temp_nastepnik)
             else:
